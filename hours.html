@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-NZ"> <!--general purpose says the page is in english New Zealand-->
+    <head>
+        <title>Open Hours</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body>
+        <!--logo and name-->
+        <div class ="logo colorHour">
+            <img src="./image/logo.png" alt="Maori symbol overlaid with a white H and R" width="20%" 
+                title="Haukai Restaurant Logo"/>
+            <header> <!--tells screen readers this is the header for the page-->
+                <h1 class ="headName">Open Hours</h1>
+            </header>
+        </div>
+        <!--html links for navigation-->
+        <nav> <!--nav for screen readers-->
+            <div class="links">
+                <a href="./index.html"class="fill-1">Home</a>
+                <a href="./menu.html"class="fill-1">Menus</a>
+                <a href="./reservations.html"class="fill-1">Reservations</a>
+                <a href="./contact.html"class="fill-1">Contact us</a>
+            </div>
+        </nav>
+        <main>
+            <center>
+                <div class="area-1 colorHour">
+                    <div class="contactMar">
+                    <br>
+                    <h2>Our open hours are:</h2>
+                    <div class="colorWhite listPad" align="left"> <!--to colour the text white on the green background-->
+                        <ul>
+                            <li><h3>Monday to Thursday: 5pm — 9pm</h3></li>
+                            <li><h3>Friday: 5pm — 10pm</h3></li>
+                            <li><h3>Saturday: 5pm — 11pm</h3></li>
+                            <li><h3>Sunday: 5pm — 10.30pm</h3></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <h2>Calendar of New Zealand holidays that we are closed on:</h2>
+                    </div><!--end of text margin affected area-->
+                    <br>
+                </div>
+                    <iframe class="frameArea" src="https://calendar.google.com/calendar/embed?src=en.new_zealand%23holiday%40group.v.calendar.google.com&ctz=Pacific%2FAuckland" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <br>
+            </center>
+        </main>
+    </body>
+</html>

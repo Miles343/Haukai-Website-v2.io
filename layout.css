@@ -1,0 +1,243 @@
+html {
+    font-size: 20px; /*setting the default rem value*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*default rem values before media checks for different text elements*/
+h1.headName{
+    font-size: 3rem;
+}
+div.links{ /*sets the size for the html links inside this div to be bigger than default*/
+    font-size: 1.5rem;
+}
+/*---Setting html link and text colours*/
+a, h1, h2, h3, h4, h5{
+    color: rgb(255, 255, 255);
+}
+/*-------make the rem values smaller for smaller device view ports---------*/
+@media (max-width: 768px) { /*targets tablets in landscape mode and down*/
+    html {
+        font-size: 15px; /*makes our rems smaller (15px down from 20px) for smaller media view ports*/
+    }
+    h1.headName {
+        font-size: 2.7rem; /*smaller header name for the smaller view ports*/
+    }
+}
+@media (max-width: 480px) { /*targets mobiles in landscape mode and down*/
+    html {
+        font-size: 10px;
+    }
+    h1.headName {
+        font-size: 2.6rem;
+    }
+    footer{
+        font-size: 1.3rem;
+    }
+}
+/*------------CONTENT-------------*/
+body {
+    margin: 0%;
+    background-color: rgb(116, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+/* restaurant logo top left*/
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+/*header colours so users can quickly tell they are on a different page*/
+.colorHome{
+    background-color: rgb(94, 4, 4);
+}
+.colorMenu{
+    background-color: rgb(117, 103, 38);
+}
+.colorHour{
+    background-color: rgb(50, 119, 41);
+}
+.colorReserve{
+    background-color: rgb(41, 103, 119);
+}
+.colorContact{
+    background-color: rgb(62, 41, 119);
+}
+.colorWhite{
+    color: rgb(255, 255, 255);
+}
+/* restaurant name */
+header{ /*auto margin for header so that it's default formatting doesn't interfere and allows screen readers to know the header*/
+    margin: auto;
+}
+h1.headName {
+    margin: auto;
+    text-shadow: 0.25rem 0.25rem rgb(0, 0, 0); /*rem shadow values to scale with view port*/
+}
+/*grid for the navigation html links to other pages*/
+div.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    background-color: rgb(94, 56, 6);
+}
+/*html link settings*/
+a.fill-1{
+    line-height:2.5rem;
+    background-color: rgb(190, 113, 30);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; /*does this by default but it might not on all browsers so worth keeping*/
+}
+a.fill-1:hover { /*makes the clickable area darker on mouse hover*/
+    background-color: rgb(117, 70, 19);
+}
+/*-----------AFTER HTML LINKS---------------*/
+div.area-1{ /*used for text area*/
+    width: 85%;
+}
+div.menuArea{ /*area for the different menus and giving it a colour*/
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(75, 65, 23);
+}
+.widthText{ /*home, restricts text width to 85% of the area's 85%*/
+    width: 85%;
+}
+.widthText-2{ /*menus and beverages*/
+    width: 90%;
+}
+div.area-2{ /*beverage area*/
+    width: 100%;
+}
+div.grid2by2{ /*for menu pictures*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.6rem;
+}
+div.grid2by1{ /*for beverage menu*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.6rem;
+}
+.small { /*line break between the grids half of 0.6 = 0.3*/
+    display: block;
+    margin: 0.3rem 0;
+ }
+.textRemovePad{
+    margin: 0px;
+    padding: 0px;
+}
+/*-----menu page drinks grid settings-----*/
+div.menuAreaDrink{ /*area for the drinks, dark blue to indicate drinks are not food*/
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(23, 26, 75);
+}
+/*custom colours to at a glance tell the user which beverage menu it is*/
+div.redWineEdge{
+    border: 0.4rem solid #ff4343;
+}
+div.whiteWineEdge{
+    border: 0.4rem solid #ffffff;
+}
+div.beerEdge{
+    border: 0.4rem solid #ffc251;
+}
+div.drinkEdge{
+    border: 0.4rem solid #87b5ff;
+}
+/*-----------------------------------*/
+.mediaWidth-1{ /*used for restaurant photo and possibly others, starts smallest width gets bigger as media view gets smaller*/
+    width: 70%;
+}
+footer{
+    background-color: rgb(94, 56, 6);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+/*--------------hours-------------*/
+div.listPad{
+    padding-left: 20%;
+}
+.frameArea{
+    width: 37rem;
+    height: 23rem;
+}
+.frameHeight-2{ /*for google forms added on to the first frame area class, this is to override the first height value*/
+    height: 45rem;
+}
+/*--------contact us------------*/
+a.fill-2 { /*makes the clickable text darker on mouse hover and blue as links are commonly blue*/
+    color: rgb(88, 166, 255);
+    cursor: pointer; /*does this by default but it might not on all browsers so worth keeping*/
+}
+a.fill-2:hover { /*makes the clickable text darker on mouse hover*/
+    color: rgb(0, 113, 243);
+}
+div.contactMar{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/*happens after the above CSS to be able to change them*/
+@media (max-width: 768px) {
+    a.fill-1{
+        font-size: 1.3rem;
+    }
+    .widthText{ /*adjust text width bigger inside the bigger div as the media view gets smaller to display well*/
+        width: 85%;
+    }
+    .mediaWidth-1{
+        width: 85%;
+    }
+    .widthText{
+        width: 94%;
+    }
+    footer{ /*smaller padding for footer as the media view gets smaller*/
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    div.dayPad{
+        padding-left: 13%;
+    }
+    .frameArea{
+        width: 30.9rem;
+    }
+}
+@media (max-width: 480px) {
+    a.fill-1{
+        font-size: 1.7rem;
+        line-height:3.2rem;
+    }
+    div.links{ /*new grid layout for smallest media view html links*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    div.grid2by1-1{ /*adjusts 2by2 into 1 by 4 in smallest viewport*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    div.area-1{ /*makes the div coloured area the full page width*/
+        width: 100%;
+    }
+    .mediaWidth-1{ /*make image the full width in smallest media view*/
+        width: 100%;
+    }
+    .widthText-2{ /*menus*/
+        width: 100%;
+    }
+    footer{
+        padding-left: 5%;
+        padding-right: 1.5%;
+    }
+    div.dayPad{
+        padding-left: 10%;
+    }
+    .frameArea{
+        width: 28.5rem;
+    }
+}
