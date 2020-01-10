@@ -1,2 +1,2 @@
-# Haukai-Website-v2.io
-Updated website for Assignment 3 of BIT607 Web Dev
+# Haukai-Website-v2
+Updated version of the website from Assignment 2 to achieve the requirements of Assignment 3
