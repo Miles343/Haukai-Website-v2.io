@@ -183,6 +183,10 @@ div.contactMar{
     margin-left: 3%;
     margin-right: 3%;
 }
+/*----------staff---------------*/
+
+
+
 /*happens after the above CSS to be able to change them*/
 @media (max-width: 768px) {
     a.fill-1{
