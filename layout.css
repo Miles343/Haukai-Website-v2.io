@@ -184,7 +184,7 @@ div.contactMar{
     margin-right: 3%;
 }
 /*----------staff---------------*/
-div.return{ /*same values as html links without the grid change at smaller viewport as just one button*/
+div.return{ /*same values as html links without the grid change at smaller viewport as it's just one link to index.html*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0.6rem;
