@@ -184,7 +184,12 @@ div.contactMar{
     margin-right: 3%;
 }
 /*----------staff---------------*/
-
+div.return{ /*same values as html links without the grid change at smaller viewport as just one button*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    background-color: rgb(94, 56, 6);
+}
 
 
 /*happens after the above CSS to be able to change them*/
