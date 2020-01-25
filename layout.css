@@ -190,7 +190,7 @@ div.returnLink{ /*same values as html links without the grid change at smaller v
     grid-gap: 0.6rem;
     background-color: rgb(94, 56, 6);
 }
-div.returnLink{ /*sets the size for the html links inside this div to be bigger than default*/
+div.returnLink{ /*sets the size for the html return link inside this div to be bigger than default*/
     font-size: 1.5rem;
 }
 
